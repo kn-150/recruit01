@@ -42,7 +42,7 @@
   display: block;
   height: 10px;
   position: absolute;
-  right: 40px;
+  right: 30px;
   top: 38%;
   transform: rotate(135deg);
   transition: transform .3s ease-in-out, top .3s ease-in-out;

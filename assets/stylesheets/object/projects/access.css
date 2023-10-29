@@ -1,7 +1,7 @@
 /* 共通 */
 .access {
   background-image: url(../../../images/flag.jpg);
-  height: 600px;
+  height: 700px;
   background-size: cover;
   display: flex;
   justify-content: center;
