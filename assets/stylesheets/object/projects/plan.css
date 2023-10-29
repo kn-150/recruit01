@@ -1,0 +1,141 @@
+/* 共通 */
+.content__titleLogo {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.content-title,
+.content__text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* リストアイテム */
+.plan__listItem {
+  border-radius: 30px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 60px 0;
+}
+
+.plan-listItem__titleLogoWrap {
+  display: flex;
+  align-items: flex-end
+}
+
+.plan-listItem__titleLogo:last-child {
+  margin-left: 10px;
+}
+
+.plan-listItem__detailWrap {
+  margin-top: 40px;
+}
+
+.plan-listItem__textWrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.plan-listItem__detailTitle {
+  text-align: center;
+  background-color: #6BCF69;
+  width: 80px;
+  height: 28px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.plan-listItem__detailImg {
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+
+/* pc */
+@media screen and (min-width: 796px) {
+  .plan__listItem {
+    width: 70%;
+  }
+
+  .plan-listTitle,
+  .plan-listItem__detailWrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .plan-listTitle {
+    margin-left: 60px;
+  }
+
+  .plan-listItem__titleLogoWrap {
+    width: 20%;
+  }
+
+  .plan-listItem__titleLogo:first-child {
+    width: 100%;
+  }
+
+  .plan-listItem__titleLogo:last-child {
+    width: 40%;
+  }
+
+  .plan-listItem__title {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  .plan-listItem__detailWrap {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .plan-listItem__detailText {
+    width: calc(100% - 120px);
+    margin-left: 20px;
+  }
+
+  .plan-listItem__detail {
+    width: 30%;
+  }
+
+  .plan-listItem__imgWrap {
+    width: 45%;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 795px) {
+  .plan__listItem {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .plan-listItem__titleLogoWrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .plan-listItem__title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .plan-listItem__detailTitle {
+    margin-left: 40px;
+  }
+
+  .plan-listItem__detailText {
+    width: calc(100% - 160px);
+    margin-left: 20px;
+  }
+
+  .plan-listItem__detailImg {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,29 @@
+/* 共通 */
+
+
+/* pc */
+@media screen and (min-width: 796px) {
+  .l-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+  }
+
+  .l-footer__logoWrap {
+    width: 300px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 795px) {
+  .l-footer {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .l-footer__logoWrap {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

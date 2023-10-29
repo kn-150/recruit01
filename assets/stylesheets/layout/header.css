@@ -1,0 +1,168 @@
+/* 共通 */
+.l-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  z-index: 99;
+}
+
+.l-header__logoWrap {
+  width: 250px;
+}
+
+.l-header__navList {
+  font-weight: bold;
+  color: #fff;
+}
+
+.l-header__navItem:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.l-header__btn {
+  background-color: #05bf02;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+/* メニューバーの下線 ーーーーーーーーーー*/
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .30s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.underline:hover::after {
+  transform: scale(1, 1);
+}
+
+
+/* pc */
+@media screen and (min-width: 796px) {
+  .l-header {
+    background-color: rgba(133, 210, 235, 0.7);
+  }
+
+  .l-header__logo {
+    width: 100%;
+  }
+
+  .l-header__navWrap {
+    width: calc(100% - 250px);
+    padding: 40px;
+  }
+
+  .l-header__navList {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: auto;
+  }
+
+  .l-header__navItem {
+    margin-left: 20px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 795px) {
+  .l-header {
+    justify-content: space-between;
+  }
+
+  /* ハンバーガーメニュー アイコンーーーーーーーーーー*/
+  .js-icon {
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    z-index: 11;
+  }
+
+  .js-icon span {
+    display: inline-block;
+    transition: all .50s;
+    position: absolute;
+  }
+
+  .js-icon span:nth-of-type(2n+1) {
+    height: 2px;
+    background-color: #fff;
+    width: 50%;
+  }
+
+  .js-icon span:first-child {
+    top: 10px;
+  }
+
+  .js-icon span:nth-of-type(2) {
+    top: 19px;
+    left: 10px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .js-icon span:last-child {
+    top: 40px;
+  }
+
+  .js-icon.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .js-icon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .js-icon.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  /* ハンバーガーメニュー メニュー表示 */
+  .l-header__navWrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 0.8s;
+    z-index: 2;
+  }
+
+  .l-header__nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: rgba(133, 210, 235, 0.7);
+  }
+
+  .l-header__navItem {
+    margin-top: 20px;
+  }
+
+  .l-header__navWrap.active {
+    transform: translateY(0%);
+  }
+}

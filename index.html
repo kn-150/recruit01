@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Travel</title>
+    <link rel="icon" href="./assets/images/common/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/app.css">
+    <!-- slick css -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ローディング画面 -->
+    <div class="js-loader-bg">
+      <div class="js-loader">
+        <img src="./assets/images/logo-white.png" alt="企業ロゴ">
+      </div>
+    </div>
+
+    <header class="l-header">
+      <figure class="l-header__logoWrap">
+        <img class="l-header__logo" src="./assets/images/logo-white.png" alt="SampleTravel ロゴ">
+      </figure>
+      <div class="l-header__navWrap">
+        <nav class="l-header__nav">
+          <ul class="l-header__navList">
+            <li class="l-header__navItem"><a href="#intro" class="underline">サントラで最高の夏に</a></li>
+            <li class="l-header__navItem"><a href="#plan" class="underline">おすすめプラン</a></li>
+            <li class="l-header__navItem"><a href="#flow" class="underline">旅行までの流れ</a></li>
+            <li class="l-header__navItem"><a href="#faq" class="underline">よくあるお問い合わせ</a></li>
+            <li class="l-header__navItem l-header__btn"><a href="#">予約する</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="js-icon sp">
+        <span></span>
+        <span>MENU</span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="kv">
+        <div>
+          <h1 class="kv__titleWrap">
+            <span class="kv__title">サントラで、最高の夏に</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="intro" id="intro">
+        <!-- 流れる文字 -->
+        <div class="intro__img">
+          <img src="./assets/images/SUMMER TRAVEL.png" alt="SUMMER TRAVEL">
+        </div>
+
+        <div class="intro__detail">
+          <div class="intro__detailItem">
+            <figure class="intro__detailImgWrap">
+              <img src="./assets/images/yukata.jpg" alt="浴衣女子" class="intro__detailImg">
+            </figure>
+          </div>
+          <div class="intro__detailItem js-fadeUp">
+            <h2 class="intro__title">テキスト<br>テキストテキスト</h2>
+            <p class="intro__text">
+              テキストテキストテキスト<br>
+              テキストテキストテキストテキ<br>
+              テキストテキストテキストテキス<br>
+              テキストテキストテキストテキスト<br>
+              テキストテキストテキストテ<br>
+              サンプルトラベルで一生の思い出をつくりませんか？
+            </p>
+          </div>
+          <div class="intro__detailItem">
+            <figure class="intro__detailImgWrap">
+              <img src="./assets/images/activity.jpg" alt="アクティビティ" class="intro__detailImg">
+            </figure>
+          </div>
+        </div>
+        <!-- 流れる画像 -->
+        <div class="intro__sliderWrap">
+          <div class="intro__slider"><img src="./assets/images/bbq.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/flag.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/hanabi_many.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/maturi.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/tanabata.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/sunflower.jpg" alt="夏" class="intro__sliderImg"></div>
+          <div class="intro__slider"><img src="./assets/images/kakigori.jpg" alt="夏" class="intro__sliderImg"></div>
+        </div>
+      </section>
+
+      <section class="plan" id="plan">
+        <div>
+          <figure class="content__titleLogo">
+            <img src="./assets/images/PLAN-dark.png" alt="PLAN" class="plan__titleImg">
+          </figure>
+          <h2 class="content-title">最高の夏にするプラン</h2>
+          <p class="content__text">この夏を最高の夏にするプランを用意しました！<br>テキストテキストテキストテキストテキスト</p>
+
+          <ul class="plan__list">
+            <li class="plan__listItem js-fadeUp">
+              <div class="plan-listTitle">
+                <div class="plan-listItem__titleLogoWrap">
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/PLAN-light.png" alt="PLAN" class="plan-listItem__titleImg">
+                  </figure>
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/01.png" alt="01" class="plan-listItem__titleImg">
+                  </figure>
+                </div>
+                <h3 class="plan-listItem__title">花火をひとりじめ！</h3>
+              </div>
+
+              <div class="plan-listItem__detailWrap">
+                <div class="plan-listItem__detail">
+                  <dl class="plan-listItem__textWrap">
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                  </dl>
+                </div>
+                <figure class="plan-listItem__imgWrap">
+                  <img src="./assets/images/hanabi_one.jpg" alt="花火" class="plan-listItem__detailImg">
+                </figure>
+              </div>
+            </li>
+
+            <li class="plan__listItem js-fadeUp">
+              <div class="plan-listTitle">
+                <div class="plan-listItem__titleLogoWrap">
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/PLAN-light.png" alt="PLAN" class="plan-listItem__titleImg">
+                  </figure>
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/01.png" alt="01" class="plan-listItem__titleImg">
+                  </figure>
+                </div>
+                <h3 class="plan-listItem__title">天然かき氷を食べよう</h3>
+              </div>
+
+              <div class="plan-listItem__detailWrap">
+                <div class="plan-listItem__detail">
+                  <dl class="plan-listItem__textWrap">
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                  </dl>
+                </div>
+                <figure class="plan-listItem__imgWrap">
+                  <img src="./assets/images/kakigori.jpg" alt="かき氷" class="plan-listItem__detailImg">
+                </figure>
+              </div>
+            </li>
+
+            <li class="plan__listItem js-fadeUp">
+              <div class="plan-listTitle">
+                <div class="plan-listItem__titleLogoWrap">
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/PLAN-light.png" alt="PLAN" class="plan-listItem__titleImg">
+                  </figure>
+                  <figure class="plan-listItem__titleLogo">
+                    <img src="./assets/images/01.png" alt="01" class="plan-listItem__titleImg">
+                  </figure>
+                </div>
+                <h3 class="plan-listItem__title">星空キャンプ</h3>
+              </div>
+
+              <div class="plan-listItem__detailWrap">
+                <div class="plan-listItem__detail">
+                  <dl class="plan-listItem__textWrap">
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキストテキスト</dd>
+                    <dt class="plan-listItem__detailTitle">テキスト</dt>
+                    <dd class="plan-listItem__detailText">テキスト</dd>
+                  </dl>
+                </div>
+                <figure class="plan-listItem__imgWrap">
+                  <img src="./assets/images/camp.jpg" alt="キャンプ" class="plan-listItem__detailImg">
+                </figure>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <!--
+        <div class="plan-campaign">
+          <h2 class="plan__title">今だけ特別キャンペーン</h2>
+        </div> -->
+      </section>
+
+      <section class="apply">
+        <div class="apply__wrap js-fadeUp">
+          <h2 class="apply__title">テキストテキスト</h2>
+          <p class="apply__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a href="#reserve" class="apply__btn">予約する</a>
+        </div>
+      </section>
+
+      <section class="flow" id="flow">
+        <figure class="content__titleLogo">
+          <img src="./assets/images/FLOW.png" alt="FLOW" class="content__titleImg">
+        </figure>
+        <h2 class="content-title">当日までの流れ</h2>
+
+        <div class="flow-columns js-scroll-trigger">
+          <div class="flow-columnItem js-fadeUp">
+            <figure class="flow-columnImg">
+              <img src="./assets/images/flow01.jpg" alt="流れ１">
+            </figure>
+            <p class="flow-columnTitle">テキストテキスト</p>
+            <p class="flow-columnText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+
+          <div class="flow-columnItem js-fadeUp">
+            <figure class="flow-columnImg">
+              <img src="./assets/images/flow02.jpg" alt="流れ2">
+            </figure>
+            <p class="flow-columnTitle">テキストテキスト</p>
+            <p class="flow-columnText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+
+          <div class="flow-columnItem js-fadeUp">
+            <figure class="flow-columnImg">
+              <img src="./assets/images/flow3.jpg" alt="流れ3">
+            </figure>
+            <p class="flow-columnTitle">テキストテキスト</p>
+            <p class="flow-columnText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2 class="content-title">よくあるお問い合わせ</h2>
+        <ul class="faq__listWrap">
+          <li class="faq__list js-fadeUp">
+            <dl class="faq__listItem">
+              <dt class="faq__listQuestion">お支払い方法は何がありますか？</dt>
+              <dd class="faq__listAnswer">
+                現金・クレジットカード（VISA、Master、JCB、AMEX、Diners）をご利用いただけます。<br>
+                お支払いは当日現地にてお願いいたします。
+              </dd>
+            </dl>
+          </li>
+
+          <li class="faq__list js-fadeUp">
+            <dl class="faq__listItem">
+              <dt class="faq__listQuestion">お支払い方法は何がありますか？</dt>
+              <dd class="faq__listAnswer">
+                現金・クレジットカード（VISA、Master、JCB、AMEX、Diners）をご利用いただけます。<br>
+                お支払いは当日現地にてお願いいたします。
+              </dd>
+            </dl>
+          </li>
+        </ul>
+
+      </section>
+
+
+      <section class="access">
+        <div class="access__wrap js-fadeUp">
+          <h2 class="access__title">会社情報</h2>
+          <div class="access__detailWrap">
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9721.438537258164!2d139.75946476981568!3d35.68050054941155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1698480376560!5m2!1sja!2sjp"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="access__detail">
+              <p>Sample Travel</p>
+              <p>〒100-0005</p>
+              <p>東京都千代田区丸の内１丁目</p>
+              <p>03-XXXX-XXXX</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="l-footer">
+      <figure class="l-footer__logoWrap">
+        <img src="./assets/images/logo-black.png" alt="企業ロゴ" class="l-footer__logo">
+      </figure>
+
+      <small class="l-footer__copylight">&copy; 2023 SampleTravel.</small>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,61 @@
+/* 共通 */
+.faq {
+  margin-top: 160px;
+  background-color: #eaeaea;
+  padding: 80px 0;
+}
+
+/* アコーディオン */
+.faq__listWrap {
+  margin-top: 40px;
+}
+
+.faq__list {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #85D2EB;
+}
+
+.faq__listQuestion {
+  background-color: #85D2EB;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px;
+}
+
+.faq__listAnswer {
+  display: none;
+  padding: 20px 40px;
+  background-color: #fff;
+}
+
+/* アコーディオン矢印 */
+.faq__listQuestion {
+  position: relative;
+}
+
+.faq__listQuestion::after {
+  border-right: solid 2px #fff;
+  border-top: solid 2px #fff;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 40px;
+  top: 38%;
+  transform: rotate(135deg);
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+  width: 10px;
+}
+
+.faq__listQuestion.open::after {
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
+/* pc */
+@media screen and (min-width: 796px) {}
+
+/* sp */
+@media screen and (max-width: 795px) {}

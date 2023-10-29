@@ -1,0 +1,20 @@
+/* ローディング画面用ーーーーーーーーーー */
+.js-loader-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #85D2EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-loader {
+  width: 50vh;
+  height: auto;
+  display: none;
+}

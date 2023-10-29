@@ -1,0 +1,92 @@
+/* 共通 */
+.intro {
+  margin-top: 80px;
+  background-color: #85D2EB;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.intro__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__detail {
+  margin-top: 40px;
+}
+
+/* 左右の写真 */
+.intro__detailImgWrap {
+  height: 100%;
+}
+
+.intro__detailImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 真ん中の文字 */
+.intro__detailItem:nth-child(2n) {
+  text-align: center;
+}
+
+.intro__text {
+  margin-top: 20px;
+}
+
+
+
+/* スライダー  */
+.intro__sliderWrap {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.intro__slider {
+  width: 270px;
+  height: 180px;
+  margin-left: 10px;
+}
+
+.intro__sliderImg {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+/* pc */
+@media screen and (min-width: 796px) {
+
+  .intro__detail {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .intro__detailItem {
+    width: 30%;
+  }
+
+
+  /* 真ん中の文字 */
+  .intro__detailItem:nth-child(2n) .intro__title {
+    font-size: 28px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 795px) {
+  .intro__detail {
+    padding: 0 40px;
+  }
+
+  .intro__detailItem {
+    margin-top: 40px;
+  }
+}

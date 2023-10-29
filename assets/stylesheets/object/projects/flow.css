@@ -1,0 +1,80 @@
+/* 共通 */
+.flow-columns {
+  width: 100%;
+}
+
+.flow-columnImg {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.flow-columnImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.flow-columnTitle {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flow-columnText {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* pc */
+@media screen and (min-width: 796px) {
+  .flow-columns {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flow-columnItem {
+    width: 30%;
+  }
+
+  /* 順にフェードインする */
+  .js-fadeUp-sequence {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  .active .js-fadeUp-sequence {
+    transition: .6s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .active .js-fadeUp-sequence:nth-child(2) {
+    transition-delay: .4s;
+  }
+
+  .active .js-fadeUp-sequence:nth-child(3) {
+    transition-delay: .8s;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 795px) {
+  .flow-columns {
+    margin-top: 60px;
+  }
+
+  .flow-columnItem {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    padding: 40px 20px;
+  }
+}
